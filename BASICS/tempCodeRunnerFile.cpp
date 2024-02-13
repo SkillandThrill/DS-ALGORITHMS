@@ -1,5 +1,8 @@
 
-    cout << "the value of x is :" << x << endl;
+    // string s1, s2;
 
-    return 0;
-}
+    // cin >> s1 >> s2;
+
+    // cout << s1 << " " << s2;
+
+    // take everything
