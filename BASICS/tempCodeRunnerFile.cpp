@@ -1,8 +1,11 @@
 
-    // string s1, s2;
 
-    // cin >> s1 >> s2;
+    else if (marks <= 44)
+    {
+        cout << "E" << endl;
+    }
 
-    // cout << s1 << " " << s2;
-
-    // take everything
+    else if (marks <= 49)
+    {
+        cout << "D" << endl;
+    }
