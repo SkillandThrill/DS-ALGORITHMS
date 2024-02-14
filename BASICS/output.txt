@@ -1,3 +1,0 @@
-value inside function :105
-value inside function :205
-value inside  int  main : 205
