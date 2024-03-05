@@ -244,6 +244,49 @@ void print17(int n)
         cout << endl;
     }
 }
+void print18(int n)
+{
+    char ch = 'A';
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'E' - i; ch <= 'E'; ch++)
+        {
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+void print21(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (i == 0 || j == 0 || i == n - 1 || j == n - 1)
+            {
+                cout << "*";
+            }
+            else
+                cout << " ";
+        }
+        cout << endl;
+    }
+}
+void print22(int n)
+{
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+            int top = i;
+            int left = j;
+            int right = (2 * n - 2) - j;
+            int bottom = (2 * n - 2) - i;
+            cout << (n - min(min(top, bottom), min(left, right)));
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -261,6 +304,6 @@ int main()
 
         int n;
         cin >> n;
-        print17(n);
+        print22(n);
     }
 }
